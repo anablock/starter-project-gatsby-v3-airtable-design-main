@@ -10,11 +10,12 @@ Regural Setup
 
 ```jsx
 import styled from 'styled-components'
+
 const NameOfElement = styled.htmlElement`
-your
-styles
-go
-here
+  your
+  styles
+  go
+  here
 `
 ```
 
@@ -24,17 +25,17 @@ Global Styles
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
-your
-global
-styles
-go here
+  your
+  global
+  styles
+  go here
 `
 // wrap root element
 export const wrapRootElement = ({ element }) => {
   return (
     <>
       <GlobalStyle />
-      {element}
+        {element}
     </>
   )
 }
